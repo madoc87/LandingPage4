@@ -1,0 +1,564 @@
+*{
+	margin: 0px;
+	padding: 0px;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+html, body{
+	height: 100%;
+}
+
+.clear{
+  clear: both;
+}
+
+.container{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/*==================================== Header ====================================*/
+
+header{
+  padding: 20px 2%;
+}
+
+.logo img{
+  float: left;
+  width: 236px;
+}
+
+header nav.menu-mobile{
+  display: none;
+  float: right;
+  width: 28px;
+  height: 28px;
+  margin-top: 7px;
+  background-image: url('../images/icons/menu-mobile.png');
+  background-size: 100% 100%;
+  cursor: pointer;
+}
+
+header nav.menu-mobile ul{
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 70px;
+  background-color: rgba(255, 255, 255, 0.95);
+  z-index: 999;
+  display: none;
+}
+
+header nav.menu-mobile ul li{
+  padding: 5px 0;
+  text-transform: uppercase;
+}
+
+header nav.menu-desktop{
+  float: right;
+}
+
+header nav.menu-desktop ul{
+  padding: 8px 0;
+  list-style-type: none;
+}
+
+header nav.menu-desktop ul li{
+  float: left;
+  font-size: 14px;
+  padding: 0 20px;
+  text-transform: uppercase;
+}
+
+header nav ul a{
+  color: #b4b4b4;
+  text-decoration: none;
+}
+
+/*==================================== Section 1 - Mosaico ====================================*/
+
+.mosaico-single{
+  float: left;
+  width: calc(100% / 6);
+  background-color: gray;
+}
+
+
+.img-mosaico-single{
+  width: 100%;
+  padding-top: 100%;
+  background-color: #ccc;
+  border: 5px solid white;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/*==================================== Section 2 - Serviços ====================================*/
+
+section.servicos > .container{
+  max-width: 800px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  top: -50px;
+  text-align: center;
+}
+
+section.servicos > .container .box-servicos{
+  width: 30%;
+  padding: 30px 2%;
+  background-color: #576975;
+  background-image: url('../images/icons/tooth.png');
+  background-position: center calc(100% - 5px);
+  background-size: 18px 18px;
+  background-repeat: no-repeat;
+}
+
+section.servicos > .container .box-servicos:nth-of-type(2){
+  width: 40%;
+  padding: 50px 2%;
+  background: #688293;
+}
+
+section.servicos > .container .box-servicos h2{
+  font-size: 15px;
+  color: white;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+section.servicos > .container .box-servicos p{
+  font-size: 12px;
+  color: white;
+  font-weight: normal;
+  margin-top: 8px;
+}
+
+/*==================================== Section 3 Perfil ====================================*/
+
+section.perfil-container{
+  padding: 0 20px;
+}
+
+section.perfil-container .perfil-wraper{
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.img-perfil{
+  float: left;
+  width: 40%;
+  height: 520px;
+  background: url('../images/imagem-do-prossional.png');
+  background-position: right;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.perfil-container .container{
+  max-width: 1000px;
+}
+
+.texto-perfil{
+  float: right;
+  width: 60%;
+  padding-left: 2%;
+}
+
+.texto-perfil h2{
+  padding-top: 30px;
+  padding-bottom: 20px;
+  text-transform: uppercase;
+  font-size: 18px;
+  color: #688293;
+}
+
+.texto-perfil p{
+  line-height: 2;
+  font-size: 15px;
+  color: #CCC;
+}
+
+/*==================================== Section 4 Videos ====================================*/
+
+section.video{
+  padding: 50px 0;
+  text-align: center;
+}
+
+section.video .box-video{
+  float: left;
+  width: 33.3%;
+  padding-top: calc(33.3% * 0.6);
+  position: relative;
+}
+
+section.video iframe{
+  width: 90%;
+  height: 90%;
+  position: absolute;
+  top: 0;
+  left: 5%;
+}
+
+/*==================================== Section 5 Tratamentos ====================================*/
+
+section.tratamento{
+  padding: 10px 0 60px 0;
+}
+
+section.tratamento h2{
+  font-size: 23px;
+  color: #698293;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 25px;
+}
+
+section.tratamento .tratamento-container{
+  float: left;
+  width: 33.3%;
+}
+
+section.tratamento .tratamento-single{
+  padding: 25px;
+}
+
+section.tratamento .tratamento-single h2{
+  font-size: 18px;
+  color: #737373;
+  text-align: center;
+}
+
+section.tratamento .tratamento-single p{
+  padding-top: 20px;
+  font-size: 13px;
+  color: #b4b4b4;
+  text-align: justify;
+}
+
+/*==================================== Section 6 Depoimentos ====================================*/
+
+section.depoimento h2{
+  font-size: 23px;
+  color: #698293;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 25px;
+}
+
+section.depoimento .container{
+  padding: 40px 0;
+  max-width: 400px;
+}
+
+section.depoimento .depoimento-single{
+  text-align: center;
+  width: 100%;
+  padding: 0 2%;
+}
+
+.depoimento-single quote{
+  font-size: 15px;
+  color: #b4b4b4;
+}
+
+.nome-depoimento{
+  padding: 19px 0;
+}
+
+.nome-depoimento img{
+  width: 32px;
+  height: 32px;
+  border-radius: 16px;
+}
+
+.nome-depoimento span{
+  position: relative;
+  top: 9px;
+  left: 5px;
+  font-size: 13px;
+  color: #b4b4b4;
+  display: inline-block;
+  vertical-align: top;
+}
+
+/*==================================== Section 7 Social ====================================*/
+
+.instagram-chamada{
+  float: left;
+  width: 100%;
+  text-align: center;
+  padding: 40px 0;
+  background-color: #98a5ae;
+}
+
+.instagram-chamada p{
+  color: white;
+  font-size: 13px;
+  padding: 10px 0;
+  line-height: 1.8;
+}
+
+.mosaico-social{
+  float: left;
+  width: 100%;
+}
+
+.img-mosaico-single-social{
+  float: left;
+  width: calc(100% / 9);
+  padding-top: calc(100% / 9);
+  border: 6px solid white;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #ccc;
+}
+
+.facebook-chamada{
+  float: left;
+  width: 100%;
+  text-align: center;
+  padding: 40px 0;
+  background-color: #576975;
+}
+
+.facebook-chamada p{
+  color: white;
+  font-size: 13px;
+  padding: 10px 0;
+  line-height: 1.8;
+}
+
+/*==================================== Section 8 Contato ====================================*/
+
+section.contato{
+  padding: 60px 2%;
+}
+
+section.contato h2{
+  font-size: 23px;
+  color: #698293;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 25px;
+}
+
+section.contato form{
+  width: 100%;
+  max-width: 500px;
+  margin: 20px auto;
+}
+
+.form-wraper{
+  float: left;
+  margin-top: 10px;
+  padding: 0 10px;
+}
+
+.w100{
+  width: 100%;
+}
+
+.w50{
+  width: 50%;
+}
+
+.form-wraper span{
+  font-size: 15px;
+  color: #b4b4b4;
+}
+
+.form-wraper input[type=text]{
+  width: 100%;
+  height: 35px;
+  line-height: 35px;
+  padding-left: 9px;
+  border: 1px solid #dadada;
+  margin-top: 8px;
+}
+
+.form-wraper textarea{
+  width: 100%;
+  height: 121px;
+  padding: 8px;
+  margin-top: 8px;
+  resize: none;
+  border: 1px solid #dadada;
+}
+
+.form-wraper input[type=submit]{
+  width: 100px;
+  height: 35px;
+  border: 0;
+  font-size: 14px;
+  background-color: #688293;
+  color: white;
+  cursor: pointer;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+}
+
+/*==================================== Footer ====================================*/
+
+footer{
+  padding: 40px 2%;
+  background-color: #688293;
+}
+
+footer .container{
+  max-width: 1000px;
+}
+
+.footer-single{
+  width: 33.3%;
+  float: left;
+}
+
+.footer-single h2{
+  font-size: 18px;
+  color: white;
+  text-align: center;
+}
+
+.footer-single p{
+  font-size: 13px;
+  color: white;
+  text-align: center;
+  padding-top: 8px;
+  line-height: 1.5;
+}
+
+/*==================================== Footer2 ====================================*/
+
+.footer2{
+  padding: 20px 2%;
+  background-color: #576975;
+}
+
+.footer2 h2{
+  font-size: 13px;
+  text-align: center;
+  color: white;
+}
+
+/*==================================== Media Query 1024 ====================================*/
+@media screen and (max-width: 1024px){
+  .img-mosaico-single-social{
+    width: calc(100% / 6);
+    padding-top: calc(100% / 6);
+  }
+
+  .mosaico-social > div:nth-of-type(1n+7){
+    display: none;
+  }
+}
+
+/*==================================== Media Query 768 ====================================*/
+@media screen and (max-width: 768px){
+
+  header nav.menu-desktop{
+    display: none;
+  }
+
+  header nav.menu-mobile{
+    display: block;
+  }
+
+  section.servicos > .container{
+    flex-direction: column;
+  }
+
+  section.servicos > .container .box-servicos{
+    width: 94%;
+    max-width: 350px;   
+    padding: 30px 2% 40px 2%;
+  }
+
+  section.servicos > .container .box-servicos:nth-of-type(2){
+    width: 94%;
+    max-width: 380px;   
+    padding: 35px 2%;
+  }
+
+  .img-perfil{
+    width: 100%;
+    background-position: center;
+  }
+
+  .texto-perfil{
+    width: 100%;
+    padding: 20px 10%;
+    text-align: justify;
+  }
+
+  section.video{
+    text-align: center;
+  }
+
+  section.video .box-video{
+    width: 80%;
+    float: none;
+    display: inline-block;
+    padding-top: calc(80% * 0.6);
+  }
+
+  section.video iframe{
+    width: 90%;
+    height: 90%;
+    position: absolute;
+    top: 0;
+    left: 5%;
+  }
+
+   .img-mosaico-single-social{
+    width: calc(100% / 3);
+    padding-top: calc(100% / 3);
+  }
+
+  .mosaico-social > div:nth-of-type(1n+4){
+    display: none;
+  }
+
+  .footer-single{
+    float: none;
+    width: 100%;
+    margin: 30px 0;
+  }
+
+}
+
+/*==================================== Media Query 580 ====================================*/
+@media screen and (max-width: 580px){
+    section.video .box-video{
+    width: 100%;
+    padding-top: calc(100% * 0.6);
+  }
+
+  .w50{
+    width: 100%;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
