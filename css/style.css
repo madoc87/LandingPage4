@@ -52,8 +52,13 @@ header nav.menu-mobile ul{
 }
 
 header nav.menu-mobile ul li{
-  padding: 5px 0;
+  padding: 10px 0;
   text-transform: uppercase;
+  font-size: 18px;
+}
+
+header nav.menu-mobile ul li a:hover{
+  color: black;
 }
 
 header nav.menu-desktop{
@@ -153,7 +158,7 @@ section.perfil-container .perfil-wraper{
   float: left;
   width: 40%;
   height: 520px;
-  background: url('../images/imagem-do-prossional.png');
+  background: url('../images/imagem-do-profissional.webp');
   background-position: right;
   background-size: contain;
   background-repeat: no-repeat;
@@ -534,6 +539,19 @@ footer .container{
   }
 
 }
+
+/*==================================== Media Query 700 ====================================*/
+@media screen and (max-width: 700px){
+
+  section.tratamento .container{
+    width: 80%;
+  }
+
+  section.tratamento .tratamento-container{
+    width: 100%;
+  }
+}
+
 
 /*==================================== Media Query 580 ====================================*/
 @media screen and (max-width: 580px){
